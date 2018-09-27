@@ -1,46 +1,28 @@
- import java.util.*;
+ import java.util.Scanner;
 
-
- public class MyClass {
-    
- public static void main(String args[]) {
-        
-        
- int [] i ={5,3,6,1};
-       
- int [] result = new int [4];
-        
-        
- for(int k=0;k<4;k++){
+public class Main {
+    public static void main(String args[]) {
+        Scanner scan=new Scanner(System.in);
+        System.out.println("Please enter the size of the array");
+        int x=scan.nextInt();
+        int [] i = new int[x];
+        int [] result = new int [x];
+        System.out.println("Please enter the elements of array");
+        for(int g=0;g<result.length;g++){
             
-	int sum=0;
-            
-		while(i[k]!=0){
+            i[g]=scan.nextInt();
+        }
+        
+        for(int k=0;k<4;k++){
+            int sum=0;
+            while(i[k]!=0){
+                sum+=i[k];
+                i[k]--;
                 
-			sum+=i[k];
-               
-			 i[k]--;
-                
-            
-		}
+            }
+        result[k]=sum;
+        System.out.print(result[k]+" ");    
+        }
        
-	 result[k]=sum;
-       
- 	System.out.print(result[k]+" ");    
-       
-	 }
-        
-	for(int z=0;z<4;z++){
-            
-            
-		System.out.print(result[z]);
-       
- 		}
-       
-        
-        
-
-       
-    
-}
+    }
 }

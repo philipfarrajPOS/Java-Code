@@ -1,0 +1,46 @@
+ import java.util.*;
+
+
+ public class MyClass {
+    
+ public static void main(String args[]) {
+        
+        
+ int [] i ={5,3,6,1};
+       
+ int [] result = new int [4];
+        
+        
+ for(int k=0;k<4;k++){
+            
+	int sum=0;
+            
+		while(i[k]!=0){
+                
+			sum+=i[k];
+               
+			 i[k]--;
+                
+            
+		}
+       
+	 result[k]=sum;
+       
+ 	System.out.print(result[k]+" ");    
+       
+	 }
+        
+	for(int z=0;z<4;z++){
+            
+            
+		System.out.print(result[z]);
+       
+ 		}
+       
+        
+        
+
+       
+    
+}
+}
